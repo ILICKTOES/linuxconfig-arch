@@ -16,6 +16,11 @@ exec i3
 
 sudo pacman -S pipewire pipewire-pulse [Y]
 
+# install lolcat
+micro ~/.config/fish/config.fish>>>>>
+la -h | lolcat
+set -g -x fish_greeting ''
+
 # openbox debian install
 debian 11 "Bullseye" 
 Terminal=guake
