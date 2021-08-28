@@ -11,17 +11,16 @@ FETCH=pfetch
 Tasks=htop
 
 sudo micro ~/.xinitrc >>>
-bash -c "sleep 1 && nitrogen --restore"
+bash -c "nitrogen --restore"
 exec i3
 
 sudo pacman -S pipewire pipewire-pulse [Y]
 
-# Xmonad debian install
-??? -to be added-
+# openbox debian install
 debian 11 "Bullseye" 
-Terminal=Tilda
-WM=Xmonad
+Terminal=guake
+WM=openbox
 Web Browser=vivaldi
-
+FETCH=screenfetch
 # RASPBERRY PI
 --ARM Twister OS
