@@ -10,7 +10,9 @@ WallpaperCH=nitrogen
 FETCH=pfetch
 Tasks=htop
 
-sudo micro ~/.xinitrc > exec i3
+sudo micro ~/.xinitrc >>>
+bash -c "sleep 1 && nitrogen --restore"
+exec i3
 
 sudo pacman -S pipewire pipewire-pulse [Y]
 
