@@ -5,10 +5,11 @@
 #
 # main base install
 
-sudo pacman -Sy && sudo pacman -S pipewire pipewire-pulse kitty fish i3 discord micro nitrogen dmenu cpupower htop pavucontrol && sudo systemctl enable cpupower
+sudo pacman -Sy && sudo pacman -S pipewire pipewire-pulse kitty fish i3 discord micro nitrogen dmenu cpupower htop pavucontrol 
+sudo systemctl enable cpupower
 
-yay -S brave
-yay -S lolcat 
+cd ~/ && git clone https://github.com/brave/brave-browser.git && cd ~/brave-browser && ./src/build/install-build-deps.sh --unsupported
+yay -S lolcat
 yay -S ttf-brutalist-mono
 yay -S pfetch
 
