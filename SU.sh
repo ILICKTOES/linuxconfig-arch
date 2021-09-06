@@ -12,13 +12,14 @@ yay -S lolcat
 yay -S ttf-brutalist-mono
 yay -S pfetch
 
-sudo pacman -Rn manjaro-zsh-config mnajaro-system  && sudo pacman -Rn tlp 
+sudo pacman -Rn manjaro-zsh-config mnajaro-system zsh && sudo pacman -Rn tlp 
 sudo pacman -S preload && sudo systemctl enable preload
 
 
 #  custom .dotfiles
 rm ~/.xinitrc
 cd ~/ 
+mkdir ~/.config/i3 && mkdir ~/.config/kitty
 mv ~/linuxconfig/pictures ~/ && mv ~/linuxconfig/config ~/.config/i3/config && mv ~/linuxconfig/kitty.conf ~/.config/kitty/kitty.conf 
 touch ~/.xinitrc && echo -e 'bash -c "nitrogen --restore" \nexec i3 >> ~/.xinitrc'
 rm -r ~/linuxconfig
