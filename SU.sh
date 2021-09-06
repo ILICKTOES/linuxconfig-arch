@@ -10,6 +10,8 @@ sudo systemctl enable cpupower
 
 # build deps
 sudo pacman -S npm python2 python-protobuf gperf java-runtime-headless clang llvm ncurses5-compat-libs
+cd ~/ && git clone https://aur.archlinux.org/ncurses5-compat-libs.git && cd ~/ncurses5-compat-libs && makepkg
+
 
 sudo pacman -S ttf-font libva
 cd ~/ && git clone https://aur.archlinux.org/brave.git && cd ~/brave && makepkg
@@ -21,8 +23,9 @@ cd ~/ && git clone https://aur.archlinux.org/ttf-brutalist-mono.git && ~/ttf-bru
 cd ~/ && git clone https://aur.archlinux.org/pfetch.git && cd ~/pfetch && makepkg
 
 sudo pacman -Rn npm python2 python-protobuf gperf java-runtime-headless clang llvm ncurses5-compat-libs
-
+sudo rm -r ~/ncurses5-compat-libs 
 sudo pacman -Rn manjaro-zsh-config mnajaro-system zsh && sudo pacman -Rn tlp 
+
 sudo pacman -S preload && sudo systemctl enable preload
 
 #  custom .dotfiles
