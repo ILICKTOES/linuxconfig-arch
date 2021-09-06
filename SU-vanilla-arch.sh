@@ -40,4 +40,9 @@ mv ~/linuxconfig/pictures ~/ && mv ~/linuxconfig/config ~/.config/i3/config && m
 touch ~/.xinitrc && echo -e 'bash -c "nitrogen --restore" \nexec i3' >> ~/.xinitrc
 rm -r ~/linuxconfig
 echo -e 'set -g -x fish_greeting '' \nla -h | lolcat' >> ~/.config/fish/config.fish
+touch ~/cpupower.service && echo -e '[Unit] \nDescription=CPU performance \n[Service] \nType=oneshot \ExecStart=/usr/bin/cpupower -c all frequency-set -g performance \n[Install] \nWantedBy=multi-user.target' >> ~/cpupower.service 
+sudo mv ~/cpupower.service /etc/systemd/system/cpupower.service
+sudo systemctl daemon-reload
+sudo systemctl enable cpupower.service
+
 cd ~/ && git clone https://github.com/oh-my-fish/oh-my-fish && cd ~/oh-my-fish && bin/install --offline
