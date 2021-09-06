@@ -24,7 +24,7 @@ sudo pacman -Rn manjaro-zsh-config mnajaro-system zsh && sudo pacman -Rn tlp nan
 
 sudo pacman -S preload && sudo systemctl enable preload
 
-sudo mv ~/linuxconfig/grub /etc/default/grub
+sudo mv ~/linuxconfig-arch/grub /etc/default/grub
 
 #  custom .dotfiles
 sudo rm -r /etc/pulse
@@ -32,9 +32,9 @@ rm ~/.zshrc
 rm ~/.xinitrc
 cd ~/ 
 mkdir ~/.config/i3 && mkdir ~/.config/kitty
-mv ~/linuxconfig/pictures ~/ && mv ~/linuxconfig/config ~/.config/i3/config && mv ~/linuxconfig/kitty.conf ~/.config/kitty/kitty.conf 
+mv ~/linuxconfig-arch/pictures ~/ && mv ~/linuxconfig-arch/config ~/.config/i3/config && mv ~/linuxconfig-arch/kitty.conf ~/.config/kitty/kitty.conf 
 touch ~/.xinitrc && echo -e 'bash -c "nitrogen --restore" \nexec i3' >> ~/.xinitrc
-rm -r ~/linuxconfig
+rm -r ~/linuxconfig-arch
 echo -e 'set -g -x fish_greeting '' \nla -h | lolcat' >> ~/.config/fish/config.fish
 touch ~/cpupower.service && echo -e '[Unit] \nDescription=CPU performance \n[Service] \nType=oneshot \ExecStart=/usr/bin/cpupower -c all frequency-set -g performance \n[Install] \nWantedBy=multi-user.target' >> ~/cpupower.service 
 sudo mv ~/cpupower.service /etc/systemd/system/cpupower.service
