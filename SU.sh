@@ -3,7 +3,7 @@
 # main base install
 
 sudo pacman -Sy && sudo pacman -S pipewire pipewire-pulse kitty fish i3 discord micro nitrogen dmenu cpupower htop pavucontrol 
-sudo systemctl enable cpupower
+sudo systemctl enable cpupower xclip 
 
 # build deps
 sudo pacman -S npm python2 python-protobuf gperf java-runtime-headless clang llvm ncurses5-compat-libs
