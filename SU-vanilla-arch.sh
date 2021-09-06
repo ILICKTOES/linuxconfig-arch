@@ -26,7 +26,7 @@ cd ~/ && git clone https://aur.archlinux.org/pfetch.git && cd ~/pfetch && makepk
 
 sudo pacman -Rn npm python2 python-protobuf gperf java-runtime-headless clang llvm 
 sudo rm -r ~/ncurses5-compat-libs 
-sudo pacman -Rn manjaro-zsh-config mnajaro-system zsh && sudo pacman -Rn tlp 
+sudo pacman -Rn manjaro-zsh-config mnajaro-system zsh && sudo pacman -Rn tlp nano vi
 
 sudo pacman -S preload && sudo systemctl enable preload
 
