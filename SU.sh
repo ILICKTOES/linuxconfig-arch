@@ -5,7 +5,7 @@ sudo systemctl enable NetworkManager
 sudo pacman -Sy && sudo pacman -Syyu && sudo pacman -S archlinux-keyring pipewire pipewire-pulse kitty fish i3 discord micro nitrogen dmenu cpupower htop pavucontrol xclip xorg 
 
 # build deps
-sudo pacman -S gn ninja clang lld gperf nodejs jre-openjdk-headless 
+sudo pacman -S gn ninja clang lld gperf nodejs java-runtime-headless
 
 sudo pacman -S xdg-utils ttf-liberation libva ffmpeg minizip re2
 cd ~/ && git clone https://github.com/ungoogled-software/ungoogled-chromium-archlinux && cd ~/ungoogled-chromium-archlinux && makepkg
