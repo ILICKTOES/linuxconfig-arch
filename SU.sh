@@ -5,21 +5,18 @@ sudo systemctl enable NetworkManager
 sudo pacman -Sy && sudo pacman -Syyu && sudo pacman -S archlinux-keyring pipewire pipewire-pulse kitty fish i3 discord micro nitrogen dmenu cpupower htop pavucontrol xclip xorg 
 
 # build deps
-sudo pacman -S npm python2 python-protobuf gperf java-runtime-headless clang llvm 
+sudo pacman -S gn ninja clang lld gperf nodejs jre-openjdk-headless 
 
-cd ~/ && git clone https://aur.archlinux.org/ncurses5-compat-libs.git && cd ~/ncurses5-compat-libs && makepkg
-
-sudo pacman -S ttf-font libva
-cd ~/ && git clone https://aur.archlinux.org/brave.git && cd ~/brave && makepkg
-
+sudo pacman -S xdg-utils ttf-liberation libva ffmpeg minizip re2
+cd ~/ && git clone https://github.com/ungoogled-software/ungoogled-chromium-archlinux && cd ~/ungoogled-chromium-archlinux && makepkg
 cd ~/ && git clone https://aur.archlinux.org/c-lolcat.git && cd ~/c-lolcat && makepkg
 
 cd ~/ && git clone https://aur.archlinux.org/ttf-brutalist-mono.git && ~/ttf-brutalist-mono && makepkg
 
 cd ~/ && git clone https://aur.archlinux.org/pfetch.git && cd ~/pfetch && makepkg
 
-sudo pacman -Rn npm python2 python-protobuf gperf jre-openjdk-headless clang llvm 
-sudo rm -r ~/ncurses5-compat-libs 
+sudo pacman -Rn gn ninja clang lld gperf nodejs jre-openjdk-headless 
+
 sudo pacman -Rn manjaro-zsh-config mnajaro-system zsh && sudo pacman -Rn tlp nano vi
 
 sudo pacman -S preload && sudo systemctl enable preload
