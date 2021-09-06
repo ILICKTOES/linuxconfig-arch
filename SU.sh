@@ -24,6 +24,8 @@ sudo pacman -Rn manjaro-zsh-config mnajaro-system zsh && sudo pacman -Rn tlp nan
 
 sudo pacman -S preload && sudo systemctl enable preload
 
+sudo mv ~/linuxconfig/grub /etc/default/grub
+
 #  custom .dotfiles
 sudo rm -r /etc/pulse
 rm ~/.zshrc
