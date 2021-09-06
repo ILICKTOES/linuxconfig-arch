@@ -1,5 +1,14 @@
-# linuxconfig
 # i3 arch install
+# notes
+
+sudo micro ~/.xinitrc >>>
+bash -c "nitrogen --restore"
+exec i3
+
+micro ~/.config/fish/config.fish>>>>>
+la -h | lolcat
+set -g -x fish_greeting ''
+
 font=brutalist mono
 Terminal=kitty
 WM=i3
@@ -9,23 +18,3 @@ GAMES=steam/Lutris
 WallpaperCH=nitrogen
 FETCH=pfetch
 Tasks=htop
-
-sudo micro ~/.xinitrc >>>
-bash -c "nitrogen --restore"
-exec i3
-
-sudo pacman -S pipewire pipewire-pulse [Y]
-
-# install lolcat
-micro ~/.config/fish/config.fish>>>>>
-la -h | lolcat
-set -g -x fish_greeting ''
-
-# openbox debian install
-debian 11 "Bullseye" 
-Terminal=guake
-WM=openbox
-Web Browser=vivaldi
-FETCH=screenfetch
-# RASPBERRY PI
---ARM Twister OS
