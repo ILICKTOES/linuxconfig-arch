@@ -17,10 +17,10 @@ sudo pacman -S preload && sudo systemctl enable preload
 
 
 #  custom .dotfiles
+rm ~/.xinitrc
 cd ~/ 
 mv ~/linuxconfig/pictures ~/ && mv ~/linuxconfig/config ~/.config/i3/config && mv ~/linuxconfig/kitty.conf ~/.config/kitty/kitty.conf 
 touch ~/.xinitrc && echo -e 'bash -c "nitrogen --restore" \nexec i3 >> ~/.xinitrc'
-cd ~/ && git clone https://github.com/oh-my-fish/oh-my-fish && cd ~/oh-my-fish && bin/install --offline
 rm -r ~/linuxconfig
- 
- echo -e 'done.'
+cd ~/ && git clone https://github.com/oh-my-fish/oh-my-fish && cd ~/oh-my-fish && bin/install --offline
+
