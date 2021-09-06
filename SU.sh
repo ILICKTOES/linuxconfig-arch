@@ -1,8 +1,8 @@
 #!/bin/bash
-
+sudo systemctl enable NetworkManager
 # main base install
 
-sudo pacman -Sy && sudo pacman -S pipewire pipewire-pulse kitty fish i3 discord micro nitrogen dmenu cpupower htop pavucontrol xclip
+sudo pacman -Sy && sudo pacman -S pipewire pipewire-pulse kitty fish i3 discord micro nitrogen dmenu cpupower htop pavucontrol xclip xorg xinit
 
 # build deps
 sudo pacman -S npm python2 python-protobuf gperf java-runtime-headless clang llvm 
