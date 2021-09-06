@@ -2,12 +2,12 @@
 sudo systemctl enable NetworkManager
 # main base install
 
-sudo pacman -Sy && sudo pacman -S pipewire pipewire-pulse kitty fish i3 discord micro nitrogen dmenu cpupower htop pavucontrol xclip xorg 
+sudo pacman -Sy && sudo pacman -Syyu && sudo pacman -S archlinux-keyring pipewire pipewire-pulse kitty fish i3 discord micro nitrogen dmenu cpupower htop pavucontrol xclip xorg 
 
 # build deps
 sudo pacman -S npm python2 python-protobuf gperf java-runtime-headless clang llvm 
-cd ~/ && git clone https://aur.archlinux.org/ncurses5-compat-libs.git && cd ~/ncurses5-compat-libs && makepkg
 
+cd ~/ && git clone https://aur.archlinux.org/ncurses5-compat-libs.git && cd ~/ncurses5-compat-libs && makepkg
 
 sudo pacman -S ttf-font libva
 cd ~/ && git clone https://aur.archlinux.org/brave.git && cd ~/brave && makepkg
@@ -18,7 +18,7 @@ cd ~/ && git clone https://aur.archlinux.org/ttf-brutalist-mono.git && ~/ttf-bru
 
 cd ~/ && git clone https://aur.archlinux.org/pfetch.git && cd ~/pfetch && makepkg
 
-sudo pacman -Rn npm python2 python-protobuf gperf java-runtime-headless clang llvm 
+sudo pacman -Rn npm python2 python-protobuf gperf jre-openjdk-headless clang llvm 
 sudo rm -r ~/ncurses5-compat-libs 
 sudo pacman -Rn manjaro-zsh-config mnajaro-system zsh && sudo pacman -Rn tlp nano vi
 
