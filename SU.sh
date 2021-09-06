@@ -1,8 +1,5 @@
 #!/bin/bash
-# yay install for vanilla arch
-# 
-# sudo pacman -S yay 
-#
+
 # main base install
 
 sudo pacman -Sy && sudo pacman -S pipewire pipewire-pulse kitty fish i3 discord micro nitrogen dmenu cpupower htop pavucontrol 
