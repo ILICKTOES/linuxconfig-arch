@@ -2,20 +2,15 @@
 sudo systemctl enable NetworkManager
 # main base install
 
-sudo pacman -Sy && sudo pacman -Syyu && sudo pacman -S archlinux-keyring pipewire pipewire-pulse kitty fish i3 discord micro nitrogen dmenu cpupower htop pavucontrol xclip xorg-server xorg-xinit xf86-input-libinput
+sudo pacman -Sy && sudo pacman -Syyu && sudo pacman -S archlinux-keyring pipewire pipewire-pulse kitty fish i3 discord micro nitrogen dmenu cpupower firefox htop pavucontrol xclip xorg-server xorg-xinit xf86-input-libinput
 
 # build deps
-sudo pacman -S gn ninja clang lld gperf nodejs java-runtime-headless
 
-sudo pacman -S xdg-utils ttf-liberation libva ffmpeg minizip re2
-cd ~/ && git clone https://github.com/ungoogled-software/ungoogled-chromium-archlinux && cd ~/ungoogled-chromium-archlinux && makepkg
 cd ~/ && git clone https://aur.archlinux.org/c-lolcat.git && cd ~/c-lolcat && makepkg
 
 cd ~/ && git clone https://aur.archlinux.org/ttf-brutalist-mono.git && ~/ttf-brutalist-mono && makepkg
 
-cd ~/ && git clone https://aur.archlinux.org/pfetch.git && cd ~/pfetch && makepkg
-
-sudo pacman -Rn gn ninja clang lld gperf nodejs jre-openjdk-headless 
+cd ~/ && git clone https://aur.archlinux.org/pfetch.git && cd ~/pfetch && makepkg 
 
 sudo pacman -Rn manjaro-zsh-config mnajaro-system zsh && sudo pacman -Rn tlp nano vi
 
