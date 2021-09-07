@@ -6,13 +6,14 @@ sudo pacman -Sy && sudo pacman -Syyu && sudo pacman -S archlinux-keyring pipewir
 
 # build deps
 
-cd ~/ && git clone https://aur.archlinux.org/c-lolcat.git && cd ~/c-lolcat && makepkg
+cd ~/ && git clone https://aur.archlinux.org/c-lolcat.git && cd ~/c-lolcat && makepkg -csi
 
-cd ~/ && git clone https://aur.archlinux.org/ttf-brutalist-mono.git && ~/ttf-brutalist-mono && makepkg
+cd ~/ && git clone https://aur.archlinux.org/ttf-brutalist-mono.git && ~/ttf-brutalist-mono && makepkg -csi
 
-cd ~/ && git clone https://aur.archlinux.org/pfetch.git && cd ~/pfetch && makepkg 
+cd ~/ && git clone https://aur.archlinux.org/pfetch.git && cd ~/pfetch && makepkg -csi
 
-sudo pacman -Rn manjaro-zsh-config mnajaro-system zsh && sudo pacman -Rn tlp nano vi
+sudo pacman -Rn manjaro-zsh-config mnajaro-system zsh
+sudo pacman -Rn tlp nano vi
 
 sudo pacman -S preload && sudo systemctl enable preload
 
