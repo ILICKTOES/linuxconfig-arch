@@ -2,7 +2,7 @@
 sudo systemctl enable NetworkManager
 # main base install
 
-sudo pacman -Sy && sudo pacman -Syyu && sudo pacman -S archlinux-keyring pipewire pipewire-pulse kitty fish i3 discord micro nitrogen dmenu cpupower vivaldi htop pavucontrol xclip xorg-server xorg-xinit xf86-input-libinput
+sudo pacman -Sy && sudo pacman -Syyu && sudo pacman -S pipewire pipewire-pulse kitty fish i3 discord micro nitrogen dmenu cpupower vivaldi htop pavucontrol xclip # xorg-server xorg-xinit xf86-input-libinput
 
 # build deps
 
