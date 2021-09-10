@@ -1,10 +1,10 @@
 #!/bin/bash
-sudo systemctl enable NetworkManager
-# main base install
+# sudo pacman -S yay base-devel git <<< use for vanialla arch/artix
+# main packages
 
-sudo pacman -Sy && sudo pacman -Syyu && sudo pacman -S pipewire pipewire-pulse kitty fish i3 sxiv steam discord micro nitrogen dmenu cpupower vivaldi htop pavucontrol xclip # xorg-server xorg-xinit xf86-input-libinput nvidia
+sudo pacman -Sy && sudo pacman -Syyu && sudo gnome-boxes pacman -S pipewire pipewire-pulse kitty fish i3 sxiv steam discord micro nitrogen dmenu cpupower vivaldi htop pavucontrol xclip # xorg-server xorg-xinit xf86-input-libinput nvidia
 
-# build deps
+# build & cleanup
 
 cd ~/ && git clone https://aur.archlinux.org/c-lolcat.git && cd ~/c-lolcat && makepkg -csi
 
