@@ -1,5 +1,5 @@
 #!/bin/bash
-# sudo pacman -S yay base-devel git <<< use for vanialla arch/artix
+# sudo pacman -S yay base-devel git <<< use for vanialla arch
 # main packages
 
 sudo pacman -Sy && sudo pacman -Syyu && sudo gnome-boxes pacman -S pipewire pipewire-pulse kitty fish i3 sxiv steam discord micro nitrogen dmenu cpupower vivaldi htop pavucontrol xclip # xorg-server xorg-xinit xf86-input-libinput nvidia
