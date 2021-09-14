@@ -2,7 +2,7 @@
 # sudo pacman -S yay base-devel git <<< use for vanialla arch
 # main packages
 
-sudo pacman -Sy && sudo pacman -Syyu && sudo gnome-boxes pacman -S pipewire pipewire-pulse kitty fish i3 sxiv steam discord micro nitrogen dmenu cpupower vivaldi htop pavucontrol xclip # xorg-server xorg-xinit xf86-input-libinput nvidia
+sudo pacman -Sy && sudo pacman -Syyu && sudo gnome-boxes gamemode pacman -S pipewire pipewire-pulse kitty fish i3 sxiv steam discord micro nitrogen dmenu cpupower vivaldi htop pavucontrol xclip xorg-server xorg-xinit xf86-input-libinput nvidia lib32-nvidia-utils 
 
 # build & cleanup
 
@@ -11,6 +11,9 @@ cd ~/ && git clone https://aur.archlinux.org/c-lolcat.git && cd ~/c-lolcat && ma
 cd ~/ && git clone https://aur.archlinux.org/ttf-brutalist-mono.git && ~/ttf-brutalist-mono && makepkg -csi
 
 cd ~/ && git clone https://aur.archlinux.org/pfetch.git && cd ~/pfetch && makepkg -csi
+
+cd ~/ && git clone https://aur.archlinux.org/libstrangle.git && cd ~/libstrangle && makepkg -csi
+
 
 sudo pacman -Rn manjaro-zsh-config mnajaro-system zsh
 sudo pacman -Rn tlp nano vi
