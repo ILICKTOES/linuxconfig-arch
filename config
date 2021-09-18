@@ -13,7 +13,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # web browser
-bindsym $mod+b exec --no-startup-id qutebrowser  
+bindsym $mod+b exec qutebrowser  
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id dmenu_run
