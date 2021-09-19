@@ -1,8 +1,13 @@
 #!/bin/bash
 
 # main packages
-sudo pacman -Sy && sudo pacman -Syyu && sudo pacman -S base-devel git yay gnome-boxes gamemode pipewire pipewire-pulse kitty fish i3 sxiv steam discord micro nitrogen dmenu cpupower qutebrowser htop pavucontrol xclip xorg-server xorg-xinit xf86-input-libinput nvidia lib32-nvidia-utils 
-
+sudo pacman -Sy && sudo pacman -Syyu && sudo pacman -S base-devel 
+sudo pacman -S kitty i3 sxiv nitrogen dmenu cpupower qutebrowser htop 
+sudo pacman -S pipewire pipewire-pulse pavucontrol
+sudo pacman -S steam discord gamemode
+sudo pacman -S gnome-boxes
+sudo pacman -S xclip xorg-server xorg-xinit xf86-input-libinput nvidia lib32-nvidia-utils
+sudo pacman -Syy
 # build & cleanup
 
 cd ~/ && git clone https://aur.archlinux.org/c-lolcat.git && cd ~/c-lolcat && makepkg -csi
@@ -36,4 +41,5 @@ sudo systemctl enable cpupower.service
 sudo mkdir ~/.steam/
 sudo mkdir ~/.steam/root/
 sudo mkdir ~/.steam/root/compatibilitytools.d
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
 cd ~/ && git clone https://github.com/oh-my-fish/oh-my-fish && cd ~/oh-my-fish && bin/install --offline
