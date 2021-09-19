@@ -12,21 +12,16 @@ sudo pacman -Syy
 
 cd ~/ && git clone https://aur.archlinux.org/c-lolcat.git && cd ~/c-lolcat && makepkg -csi
 
-cd ~/ && git clone https://aur.archlinux.org/ttf-brutalist-mono.git && ~/ttf-brutalist-mono && makepkg -csi
+cd ~/ && git clone https://aur.archlinux.org/ttf-brutalist-mono.git && cd ~/ttf-brutalist-mono && makepkg -csi
 
 cd ~/ && git clone https://aur.archlinux.org/pfetch.git && cd ~/pfetch && makepkg -csi
 
 cd ~/ && git clone https://aur.archlinux.org/libstrangle.git && cd ~/libstrangle && makepkg -csi
 
-sudo pacman -S preload && sudo systemctl enable preload
-
+sudo mkdir /etc/default/grub
 sudo mv ~/linuxconfig-arch/grub /etc/default/grub
 
-sudo pacman -Rn tlp nano vi
-
 #  custom .dotfiles
-sudo rm -r /etc/pulse
-rm ~/.zshrc
 rm ~/.xinitrc
 cd ~/ 
 mkdir ~/.config/i3 && mkdir ~/.config/kitty
