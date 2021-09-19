@@ -8,8 +8,6 @@ sudo pacman -Sy
 sudo pacman -S pipewire pipewire-pulse pavucontrol
 sudo pacman -Sy
 sudo pacman -S steam discord gamemode gnome-boxes
-sudo pacman -Sy
-sudo pacman -S xclip xorg-server xorg-xinit xf86-input-libinput nvidia lib32-nvidia-utils
 sudo pacman -Syy
 # build & cleanup
 
