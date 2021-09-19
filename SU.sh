@@ -2,10 +2,13 @@
 
 # main packages
 sudo pacman -Sy && sudo pacman -Syyu && sudo pacman -S base-devel 
+sudo pacman -Sy
 sudo pacman -S kitty i3 sxiv nitrogen dmenu cpupower qutebrowser htop 
+sudo pacman -Sy
 sudo pacman -S pipewire pipewire-pulse pavucontrol
-sudo pacman -S steam discord gamemode
-sudo pacman -S gnome-boxes
+sudo pacman -Sy
+sudo pacman -S steam discord gamemode gnome-boxes
+sudo pacman -Sy
 sudo pacman -S xclip xorg-server xorg-xinit xf86-input-libinput nvidia lib32-nvidia-utils
 sudo pacman -Syy
 # build & cleanup
@@ -20,6 +23,8 @@ cd ~/ && git clone https://aur.archlinux.org/libstrangle.git && cd ~/libstrangle
 
 sudo mkdir /etc/default/grub
 sudo mv ~/linuxconfig-arch/grub /etc/default/grub
+
+sudo pacman -S xclip xorg-server xorg-xinit xf86-input-libinput nvidia lib32-nvidia-utils
 
 #  custom .dotfiles
 rm ~/.xinitrc
