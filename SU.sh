@@ -36,8 +36,5 @@ touch ~/cpupower.service && echo -e '[Unit] \nDescription=CPU performance \n[Ser
 sudo mv ~/cpupower.service /etc/systemd/system/cpupower.service
 sudo systemctl daemon-reload
 sudo systemctl enable cpupower.service
-sudo mkdir ~/.steam/
-sudo mkdir ~/.steam/root/
-sudo mkdir ~/.steam/root/compatibilitytools.d
 sudo grub-mkconfig -o /boot/grub/grub.cfg 
 cd ~/ && git clone https://github.com/oh-my-fish/oh-my-fish && cd ~/oh-my-fish && bin/install --offline
