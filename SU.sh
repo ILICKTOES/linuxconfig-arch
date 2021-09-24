@@ -7,7 +7,7 @@ sudo pacman -S kitty i3 sxiv nitrogen dmenu cpupower htop
 sudo pacman -Sy
 sudo pacman -S pipewire pipewire-pulse pavucontrol
 sudo pacman -Sy
-sudo pacman -S steam discord gamemode gnome-boxes qutebrowser
+sudo pacman -S steam discord gamemode gnome-boxes qutebrowser chromium
 sudo pacman -Sy
 sudo pacman -S xclip xorg-server xorg-xinit xf86-input-libinput nvidia lib32-nvidia-utils
 sudo pacman -Syy
@@ -25,13 +25,6 @@ cd ~/git && git clone https://aur.archlinux.org/libstrangle.git && cd ~/git/libs
 
 sudo mkdir /etc/default/grub
 sudo mv ~/linuxconfig-arch/grub /etc/default/grub
-
-rm -r ~/.config/fish/config.fish
-
-mkdir ~/.config/fish/
-
-touch ~/.config/fish/config.fish
-echo -e 'set fish_greeting \nla -h | lolcat' >> ~/.config/fish/config.fish
 
 #  custom .dotfiles
 mkdir ~/.config/i3 && mkdir ~/.config/kitty
