@@ -21,10 +21,10 @@ cd ~/git && git clone https://aur.archlinux.org/ttf-brutalist-mono.git && cd ~/g
 
 cd ~/git && git clone https://aur.archlinux.org/pfetch.git && cd ~/git/pfetch && makepkg -csi
 
-cd ~/git && git clone https://gitlab.com/torkel104/libstrangle.git  && cd ~/git/libstrangle && make && sudo make install
-
+cd ~/git && git clone --recurse-submodules https://github.com/flightlessmango/MangoHud.git  && cd ~/git/MangoHud && ./build.sh install && ./build.sh build
 sudo mkdir /etc/default/grub
 sudo mv ~/linuxconfig-arch/grub /etc/default/grub
+sudo pacman -Rns ninja python-beaker meson python-mako
 
 #  custom .dotfiles
 mkdir ~/.config/i3 && mkdir ~/.config/kitty
