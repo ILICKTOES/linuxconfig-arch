@@ -21,7 +21,7 @@ cd ~/git && git clone https://aur.archlinux.org/ttf-brutalist-mono.git && cd ~/g
 
 cd ~/git && git clone https://aur.archlinux.org/pfetch.git && cd ~/git/pfetch && makepkg -csi
 
-cd ~/git && git clone https://aur.archlinux.org/libstrangle.git && cd ~/git/libstrangle && makepkg -csi
+cd ~/git && git clone https://gitlab.com/torkel104/libstrangle.git  && cd ~/git/libstrangle && make && sudo make install
 
 sudo mkdir /etc/default/grub
 sudo mv ~/linuxconfig-arch/grub /etc/default/grub
