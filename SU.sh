@@ -7,7 +7,7 @@ sudo pacman -S kitty i3 sxiv nitrogen dmenu cpupower htop
 sudo pacman -Sy
 sudo pacman -S pipewire pipewire-pulse pavucontrol
 sudo pacman -Sy
-sudo pacman -S steam discord gamemode gnome-boxes qutebrowser chromium
+sudo pacman -S steam discord gamemode gnome-boxes qutebrowser 
 sudo pacman -Sy
 sudo pacman -S xclip xorg-server xorg-xinit xf86-input-libinput nvidia lib32-nvidia-utils
 sudo pacman -Syy
@@ -21,7 +21,10 @@ cd ~/git && git clone https://aur.archlinux.org/ttf-brutalist-mono.git && cd ~/g
 
 cd ~/git && git clone https://aur.archlinux.org/pfetch.git && cd ~/git/pfetch && makepkg -csi
 
+cd ~/git && git clone https://aur.archlinux.org/ungoogled-chromium.git && cd ~/git/ungoogled-chromium && makepkg -csi
+
 cd ~/git && git clone --recurse-submodules https://github.com/flightlessmango/MangoHud.git  && cd ~/git/MangoHud && ./build.sh install && ./build.sh build
+
 sudo mkdir /etc/default/grub
 sudo mv ~/linuxconfig-arch/grub /etc/default/grub
 sudo pacman -Rns ninja python-beaker meson python-mako
