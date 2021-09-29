@@ -30,9 +30,8 @@ sudo pacman -Rns ninja python-beaker meson python-mako
 #  custom .dotfiles
 mkdir ~/.config/i3 && mkdir ~/.config/kitty
 mv ~/linuxconfig-arch/pictures ~/git && mv ~/linuxconfig-arch/config ~/.config/i3/config && mv ~/linuxconfig-arch/kitty.conf ~/.config/kitty/kitty.conf 
-echo -e 'ls -lah | lolcat \nfish' >> ~/.bashrc
 touch ~/.xinitrc && echo -e 'bash -c "nitrogen --restore" \nexec i3' >> ~/.xinitrc
-echo -e 'set -g -x fish_greeting' >> ~/.config/fish/config.fish
+echo -e 'set -g -x fish_greeting \nls -lah | lolcat' >> ~/.config/fish/config.fish
 touch ~/cpupower.service && echo -e '[Unit] \nDescription=CPU performance \n[Service] \nType=oneshot \ExecStart=/usr/bin/cpupower -c all frequency-set -g performance \n[Install] \nWantedBy=multi-user.target' >> ~/cpupower.service 
 sudo mv ~/cpupower.service /etc/systemd/system/cpupower.service
 sudo systemctl daemon-reload
