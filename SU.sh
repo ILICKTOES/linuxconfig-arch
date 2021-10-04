@@ -1,4 +1,4 @@
-D#!/bin/bash
+#!/bin/bash
 
 # main packages
 sudo pacman -Sy && sudo pacman -Syyu && sudo pacman -S base-devel 
