@@ -3,16 +3,22 @@
 # main packages
 sudo pacman -Sy && sudo pacman -Syyu && sudo pacman -S base-devel 
 sudo pacman -Sy
+
 sudo pacman -S kitty i3 sxiv nitrogen vim dmenu cpupower htop vifm qutebrowser  
 sudo pacman -Sy
+
 sudo pacman -S pipewire pipewire-pulse pavucontrol
 sudo pacman -Sy
+
 sudo pacman -S steam discord gamemode gnome-boxes chromium lutris
 sudo pacman -Sy
-sudo pacman -S xclip xorg-server xorg-xinit xf86-input-libinput nvidia lib32-nvidia-utils
-sudo pacman -Syyu
-# build & cleanup
 
+sudo pacman -S xclip xorg-server xorg-xinit xf86-input-libinput nvidia lib32-nvidia-utils
+sudo pacman -Sy
+
+sudo pacman -Syyu
+
+# build & cleanup
 mkdir ~/git
 
 cd ~/git && git clone https://aur.archlinux.org/c-lolcat.git && cd ~/git/c-lolcat && makepkg -csi
@@ -40,7 +46,7 @@ sudo mv ~/linuxconfig-arch/grub /etc/default/grub
 sudo pacman -Rns ninja python-beaker meson python-mako
 
 #  custom .dotfiles
-mkdir ~/.config/i3 && mkdir ~/.config/kitty
+mkdir ~/.config/i3 && mkdir ~/.config/kitty && mkdir ~/.config/rofi
 mv ~/linuxconfig-arch/pictures ~/git && mv ~/linuxconfig-arch/config ~/.config/i3/config && mv ~/linuxconfig-arch/kitty.conf ~/.config/kitty/kitty.conf 
 touch ~/.xinitrc && echo -e 'bash -c "nitrogen --restore" \nexec i3' >> ~/.xinitrc
 echo -e 'set -g -x fish_greeting \nls -lah | lolcat' >> ~/.config/fish/config.fish
