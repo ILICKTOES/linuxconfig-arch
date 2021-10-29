@@ -25,8 +25,6 @@ cd ~/git && git clone https://aur.archlinux.org/c-lolcat.git && cd ~/git/c-lolca
 
 cd ~/git && git clone https://aur.archlinux.org/ttf-brutalist-mono.git && cd ~/git/ttf-brutalist-mono && makepkg -csi
 
-cd ~/git && git clone https://aur.archlinux.org/pfetch.git && cd ~/git/pfetch && makepkg -csi
-
 cd ~/git && git clone https://aur.archlinux.org/mesen.git && cd ~/git/mesen && makepkg -csi
 
 cd ~/git && git clone https://aur.archlinux.org/m64py.git && cd ~/git/m64py && makepkg -csi
