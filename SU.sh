@@ -48,8 +48,6 @@ mkdir ~/.config/i3 && mkdir ~/.config/kitty
 mv ~/linuxconfig-arch/pictures ~/git && mv ~/linuxconfig-arch/config ~/.config/i3/config && mv ~/linuxconfig-arch/kitty.conf ~/.config/kitty/kitty.conf 
 touch ~/.xinitrc && echo -e 'bash -c "\n/usr/bin/pipewire & \n/usr/bin/pipewire-pulse & \n/usr/bin/wireplumber & \nnitrogen --restore" \nexec i3' >> ~/.xinitrc
 echo -e 'set -g -x fish_greeting \nls -lah | lolcat' >> ~/.config/fish/config.fish
-touch ~/cpupower.service && echo -e '[Unit] \nDescription=CPU performance \n[Service] \nType=oneshot \ExecStart=/usr/bin/cpupower -c all frequency-set -g performance \n[Install] \nWantedBy=multi-user.target' >> ~/cpupower.service 
-sudo mv ~/cpupower.service /etc/systemd/system/cpupower.service
 sudo dinitctl enable cpupower
 rm -r ~/linuxconfig-arch
 sudo grub-mkconfig -o /boot/grub/grub.cfg 
