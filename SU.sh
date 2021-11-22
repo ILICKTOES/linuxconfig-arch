@@ -7,7 +7,7 @@ sudo pacman -Sy
 sudo pacman -S kitty i3 sxiv nitrogen vim dmenu cpupower htop vifm qutebrowser  
 sudo pacman -Sy
 
-sudo pacman -S pipewire pipewire-pulse pavucontrol
+sudo pacman -S pipewire pipewire-pulse wireplumber pavucontrol
 sudo pacman -Sy
 
 sudo pacman -S steam discord gamemode gnome-boxes chromium lutris
