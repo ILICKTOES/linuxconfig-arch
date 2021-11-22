@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # main packages
-sudo pacman -Sy && sudo pacman -Syyu && sudo pacman -S base-devel 
+sudo pacman -Sy && sudo pacman -Syyu 
 sudo pacman -Sy
 
 sudo pacman -S kitty i3 sxiv nitrogen vim dmenu cpupower htop vifm qutebrowser  
@@ -50,8 +50,7 @@ touch ~/.xinitrc && echo -e 'bash -c "nitrogen --restore" \nexec i3' >> ~/.xinit
 echo -e 'set -g -x fish_greeting \nls -lah | lolcat' >> ~/.config/fish/config.fish
 touch ~/cpupower.service && echo -e '[Unit] \nDescription=CPU performance \n[Service] \nType=oneshot \ExecStart=/usr/bin/cpupower -c all frequency-set -g performance \n[Install] \nWantedBy=multi-user.target' >> ~/cpupower.service 
 sudo mv ~/cpupower.service /etc/systemd/system/cpupower.service
-sudo systemctl daemon-reload
-sudo systemctl enable cpupower.service
+sudo dinitctl enable cpupower
 rm -r ~/linuxconfig-arch
 sudo grub-mkconfig -o /boot/grub/grub.cfg 
 cd ~/git && git clone https://github.com/oh-my-fish/oh-my-fish && cd ~/git/oh-my-fish && bin/install --offline
