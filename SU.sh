@@ -4,7 +4,7 @@
 sudo pacman -Sy && sudo pacman -Syyu 
 sudo pacman -Sy
 
-sudo pacman -S kitty i3 sxiv nitrogen vim dmenu cpupower-dinit htop vifm qutebrowser  
+sudo pacman -S kitty i3 sxiv nitrogen vim dmenu htop vifm qutebrowser  
 sudo pacman -Sy
 
 sudo pacman -S pipewire pipewire-pulse wireplumber pavucontrol
