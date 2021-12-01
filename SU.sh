@@ -25,18 +25,6 @@ cd ~/git && git clone https://aur.archlinux.org/c-lolcat.git && cd ~/git/c-lolca
 
 cd ~/git && git clone https://aur.archlinux.org/ttf-brutalist-mono.git && cd ~/git/ttf-brutalist-mono && makepkg -csi
 
-cd ~/git && git clone https://aur.archlinux.org/mesen.git && cd ~/git/mesen && makepkg -csi
-
-cd ~/git && git clone https://aur.archlinux.org/m64py.git && cd ~/git/m64py && makepkg -csi
-
-cd ~/git && git clone https://aur.archlinux.org/dolphin-emu-git.git && cd ~/git/dolphin-emu-git && makepkg -csi
-
-cd ~/git && git clone https://aur.archlinux.org/epsxe.git && cd ~/git/epsxe && makepkg -csi
-
-cd ~/git && git clone https://aur.archlinux.org/bsnes-hd.git && cd ~/git/bsnes-hd && makepkg -csi
-
-
-
 cd ~/git && git clone --recurse-submodules https://github.com/flightlessmango/MangoHud.git  && cd ~/git/MangoHud && ./build.sh install && ./build.sh build
 
 sudo mkdir /etc/default/grub
