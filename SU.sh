@@ -4,7 +4,7 @@
 sudo pacman -Sy && sudo pacman -Syyu 
 sudo pacman -Sy
 
-sudo pacman -S kitty i3 sxiv nitrogen vim dmenu htop vifm qutebrowser  
+sudo pacman -S kitty i3 sxiv nitrogen micro dmenu htop vifm qutebrowser  
 sudo pacman -Sy
 
 sudo pacman -S pipewire pipewire-pulse wireplumber pavucontrol
@@ -34,7 +34,7 @@ sudo pacman -Rns ninja python-beaker meson python-mako
 #  custom .dotfiles
 mkdir ~/.config/i3 && mkdir ~/.config/kitty 
 mv ~/linuxconfig-arch/pictures ~/git && mv ~/linuxconfig-arch/config ~/.config/i3/config && mv ~/linuxconfig-arch/kitty.conf ~/.config/kitty/kitty.conf 
-touch ~/.xinitrc && echo -e '/usr/bin/pipewire & \n/usr/bin/pipewire-pulse & \n/usr/bin/wireplumber & \nexec i3' >> ~/.xinitrc
+touch ~/.xinitrc && echo -e '/usr/bin/pipewire & \n/usr/bin/pipewire-pulse & \nexec i3' >> ~/.xinitrc
 echo -e 'set -g -x fish_greeting \nls -lah | lolcat' >> ~/.config/fish/config.fish
 sudo dinitctl enable cpupower
 rm -r ~/linuxconfig-arch
