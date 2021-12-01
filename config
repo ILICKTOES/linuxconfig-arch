@@ -139,3 +139,4 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 exec --no-startup-id nitrogen --restore
+exec --no-startup-id wireplumber
