@@ -20,6 +20,9 @@ sudo pacman -Syyu
 
 # build & cleanup
 mkdir ~/git
+sudo mkdir /mnt/media
+sudo mkdir /mnt/media2
+sudo mkdir /mnt/media3
 
 cd ~/git && git clone https://aur.archlinux.org/c-lolcat.git && cd ~/git/c-lolcat && makepkg -csi
 
