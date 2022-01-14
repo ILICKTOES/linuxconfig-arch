@@ -1,10 +1,6 @@
 # i3 arch install
 # notes
 
-sudo micro ~/.xinitrc >>>
-bash -c "nitrogen --restore"
-exec i3
-
 micro ~/.config/fish/config.fish>>>>>
 la -h | lolcat
 set -g -x fish_greeting ''
