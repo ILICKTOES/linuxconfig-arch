@@ -4,7 +4,7 @@
 sudo pacman -Sy && sudo pacman -Syyu 
 sudo pacman -Sy
 
-sudo pacman -S kitty i3 sxiv nitrogen vim dmenu htop thunar vifm cpupower-dinit qutebrowser  
+sudo pacman -S kitty i3 sxiv nitrogen vim dmenu htop thunar vifm qutebrowser  
 sudo pacman -Sy
 
 sudo pacman -S pipewire pipewire-pulse wireplumber pavucontrol
@@ -19,10 +19,14 @@ sudo pacman -Sy
 sudo pacman -Syyu
 
 # build & cleanup
+
 mkdir ~/git
+
 sudo mkdir /mnt/media
 sudo mkdir /mnt/media2
 sudo mkdir /mnt/media3
+
+cd ~/git && git clone https://aur.archlinux.org/qt5-webengine-widevine.git && cd ~/git/qt5-webengine-widevine && makepkg -csi
 
 cd ~/git && git clone https://aur.archlinux.org/c-lolcat.git && cd ~/git/c-lolcat && makepkg -csi
 
