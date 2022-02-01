@@ -1,9 +1,7 @@
 # i3 arch install
 # notes
 
-micro ~/.config/fish/config.fish>>>>>
-la -h | lolcat
-set -g -x fish_greeting ''
+basestrap /mnt base base-devel linux linux-firmware dinit elogind-dinit ntp-dinit networkmanager-dinit cpupower-dinit git fish vim
 
 font=brutalist mono
 Terminal=kitty
