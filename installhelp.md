@@ -1,5 +1,6 @@
 # i3 arch install
 # notes
+add arch repos at the end
 
 basestrap /mnt base base-devel linux linux-firmware dinit elogind-dinit ntp-dinit networkmanager-dinit cpupower-dinit git fish vim
 
