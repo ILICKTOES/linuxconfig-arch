@@ -2,7 +2,7 @@
 # notes
 add arch repos at the end
 
-basestrap /mnt base base-devel linux linux-firmware dinit elogind-dinit ntp-dinit networkmanager-dinit cpupower-dinit git fish vim
+basestrap /mnt base base-devel linux linux-firmware networkmanager cpupower git fish vim micro
 
 font=brutalist mono
 Terminal=kitty
