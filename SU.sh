@@ -10,7 +10,7 @@ sudo pacman -S kitty i3 sxiv nitrogen vim dmenu htop thunar vifm qutebrowser
 sudo pacman -S pipewire pipewire-pulse wireplumber pavucontrol
 
 
-sudo pacman -S steam discord lutris gamemode
+sudo pacman -S steam discord lutris gamemode lib32-gamemode
 
 
 sudo pacman -S xclip xorg-server xorg-xinit xf86-input-libinput nvidia lib32-nvidia-utils nvidia-settings
