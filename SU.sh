@@ -1,22 +1,19 @@
 #!/bin/bash
 
 # main packages
-sudo pacman -Sy && sudo pacman -Syyu 
+sudo pacman -Syyu 
 sudo pacman -Sy
 
 sudo pacman -S kitty i3 sxiv nitrogen vim dmenu htop thunar vifm qutebrowser  
-sudo pacman -Sy
+
 
 sudo pacman -S pipewire pipewire-pulse wireplumber pavucontrol
-sudo pacman -Sy
+
 
 sudo pacman -S steam discord lutris
-sudo pacman -Sy
+
 
 sudo pacman -S xclip xorg-server xorg-xinit xf86-input-libinput nvidia lib32-nvidia-utils nvidia-settings
-sudo pacman -Sy
-
-sudo pacman -Syyu
 
 # build & cleanup
 
@@ -43,7 +40,7 @@ mkdir ~/.config/i3 && mkdir ~/.config/kitty
 mv ~/linuxconfig-arch/pictures ~/git && mv ~/linuxconfig-arch/config ~/.config/i3/config && mv ~/linuxconfig-arch/kitty.conf ~/.config/kitty/kitty.conf 
 touch ~/.xinitrc && echo -e '/usr/bin/pipewire & \n/usr/bin/pipewire-pulse & \nexec i3' >> ~/.xinitrc
 echo -e 'set -g -x fish_greeting \nls -lah | lolcat' >> ~/.config/fish/config.fish
-sudo dinitctl enable cpupower
+sudo sytemctl enable cpupower
 rm -r ~/linuxconfig-arch
 sudo grub-mkconfig -o /boot/grub/grub.cfg 
 cd ~/git && git clone https://github.com/oh-my-fish/oh-my-fish && cd ~/git/oh-my-fish && bin/install --offline
