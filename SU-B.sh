@@ -10,7 +10,7 @@ sudo pacman -Sy
 sudo pacman -S pipewire pipewire-pulse wireplumber pavucontrol
 sudo pacman -Sy
 
-sudo pacman -S steam discord gamemode gnome-boxes chromium lutris
+sudo pacman -S steam discord gamemode chromium lutris
 sudo pacman -Sy
 
 sudo pacman -S xclip xorg-server xorg-xinit xf86-input-libinput nvidia lib32-nvidia-utils
