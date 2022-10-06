@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # main packages
-sudo pacman -Syyu 
+sudo mv ~/git/pacman/pacman.conf /etc/pacman.conf 
 sudo pacman -Sy
+sudo pacman -Syyu 
 
 sudo pacman -S kitty i3 sxiv nitrogen vim dmenu htop thunar vifm qutebrowser clutter 
 
@@ -21,7 +22,6 @@ mkdir ~/git
 
 sudo mkdir /mnt/media
 sudo mkdir /mnt/media2
-sudo mkdir /mnt/media3
 
 cd ~/git && git clone https://aur.archlinux.org/qt5-webengine-widevine.git && cd ~/git/qt5-webengine-widevine && makepkg -csi
 
