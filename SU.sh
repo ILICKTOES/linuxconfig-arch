@@ -11,7 +11,7 @@ sudo pacman -S kitty i3 sxiv nitrogen vim dmenu htop thunar vifm qutebrowser clu
 sudo pacman -S pipewire pipewire-pulse wireplumber pavucontrol
 
 
-sudo pacman -S steam discord lutris gamemode lib32-gamemode
+sudo pacman -S steam discord lutris gamemode lib32-gamemode wine wine-staging
 
 
 sudo pacman -S xclip xorg-server xorg-xinit xf86-input-libinput nvidia lib32-nvidia-utils nvidia-settings
@@ -24,6 +24,8 @@ sudo mkdir /mnt/media
 sudo mkdir /mnt/media2
 
 cd ~/git && git clone https://aur.archlinux.org/qt5-webengine-widevine.git && cd ~/git/qt5-webengine-widevine && makepkg -csi
+
+cd ~/git && git clone https://aur.archlinux.org/yay.git && cd ~/git/yay && makepkg -csi
 
 cd ~/git && git clone https://aur.archlinux.org/c-lolcat.git && cd ~/git/c-lolcat && makepkg -csi
 
@@ -40,8 +42,6 @@ mkdir ~/.config/i3 && mkdir ~/.config/kitty
 mv ~/linuxconfig-arch/pictures ~/git && mv ~/linuxconfig-arch/config ~/.config/i3/config && mv ~/linuxconfig-arch/kitty.conf ~/.config/kitty/kitty.conf 
 touch ~/.xinitrc && echo -e '/usr/bin/pipewire & \n/usr/bin/pipewire-pulse & \nexec i3' >> ~/.xinitrc
 echo -e 'set -g -x fish_greeting \nls -lah | lolcat' >> ~/.config/fish/config.fish
-sudo systemctl enable cpupower
-sudo systemctl enable NetworkManager
 rm -r ~/linuxconfig-arch
 sudo grub-mkconfig -o /boot/grub/grub.cfg 
 cd ~/git && git clone https://github.com/oh-my-fish/oh-my-fish && cd ~/git/oh-my-fish && bin/install --offline
