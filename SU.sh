@@ -22,6 +22,8 @@ mkdir ~/git
 
 sudo mkdir /mnt/media
 sudo mkdir /mnt/media2
+sudo mkdir /mnt/media3
+sudo mkdir /mnt/media4
 
 cd ~/git && git clone https://aur.archlinux.org/qt5-webengine-widevine.git && cd ~/git/qt5-webengine-widevine && makepkg -csi
 
