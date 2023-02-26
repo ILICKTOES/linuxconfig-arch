@@ -25,15 +25,11 @@ sudo mkdir /mnt/media2
 sudo mkdir /mnt/media3
 sudo mkdir /mnt/media4
 
-cd ~/git && git clone https://aur.archlinux.org/qt5-webengine-widevine.git && cd ~/git/qt5-webengine-widevine && makepkg -csi
-
 cd ~/git && git clone https://aur.archlinux.org/yay.git && cd ~/git/yay && makepkg -csi
 
 cd ~/git && git clone https://aur.archlinux.org/c-lolcat.git && cd ~/git/c-lolcat && makepkg -csi
 
 cd ~/git && git clone https://aur.archlinux.org/ttf-brutalist-mono.git && cd ~/git/ttf-brutalist-mono && makepkg -csi
-
-cd ~/git && git clone --recurse-submodules https://github.com/flightlessmango/MangoHud.git  && cd ~/git/MangoHud && ./build.sh install && ./build.sh build
 
 sudo mkdir /etc/default/grub
 sudo mv ~/linuxconfig-arch/grub /etc/default/grub
