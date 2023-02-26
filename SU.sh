@@ -5,7 +5,7 @@ sudo mv ~/git/pacman/pacman.conf /etc/pacman.conf
 sudo pacman -Sy
 sudo pacman -Syyu 
 
-sudo pacman -S kitty i3 sxiv nitrogen vim dmenu htop thunar vifm clutter 
+sudo pacman -S kitty i3 sxiv nitrogen dmenu htop thunar clutter 
 
 
 sudo pacman -S pipewire pipewire-pulse wireplumber pavucontrol
