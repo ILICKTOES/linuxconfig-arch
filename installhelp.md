@@ -1,14 +1,13 @@
 # i3 arch install
 
-pacstrap /mnt base base-devel linux linux-firmware networkmanager cpupower git fish vim micro
+pacstrap /mnt base base-devel mtools linux linux-firmware networkmanager cpupower git fish vim 
 
 font=brutalist mono
 Terminal=kitty
 WM=i3
-Web Browser=qutebrowser
+Web Browser=fiirefox
 RUN=dmenu
-GAMES=steam/Lutris
+GAMES=steam-runtime/Lutris
 WallpaperCH=nitrogen
-FETCH=pfetch
 Tasks=htop
 text editor=vim
