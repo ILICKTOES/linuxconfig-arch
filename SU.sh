@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # main packages
-sudo mv ~/git/pacman/pacman.conf /etc/pacman.conf 
 sudo pacman -Sy
 sudo pacman -Syyu 
 
