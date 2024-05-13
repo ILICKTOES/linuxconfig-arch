@@ -15,6 +15,8 @@ sudo pacman -S steam-runtime discord lutris gamemode lib32-gamemode wine wine-st
 
 sudo pacman -S xclip xorg-server xorg-xinit xf86-input-libinput nvidia lib32-nvidia-utils nvidia-settings
 
+sudo systemctl --global pipewire pipewire-pulse pipewire-media-session
+
 # build & cleanup
 
 mkdir ~/git
