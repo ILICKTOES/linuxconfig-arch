@@ -7,7 +7,7 @@ sudo pacman -Syyu
 sudo pacman -S kitty i3 sxiv nitrogen dmenu htop thunar 
 
 
-sudo pacman -S pipewire pipewire-pulse wireplumber pavucontrol
+sudo pacman -S pipewire pipewire-pulse pipewire-media-session pavucontrol
 
 
 sudo pacman -S steam-runtime discord lutris gamemode lib32-gamemode wine wine-staging
