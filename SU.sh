@@ -22,9 +22,9 @@ sudo systemctl --global pipewire pipewire-pulse pipewire-media-session
 mkdir ~/git
 
 cd ~/git && git clone https://aur.archlinux.org/ttf-brutalist-mono.git && cd ~/git/ttf-brutalist-mono && makepkg -csi
-
+cd ~/git && git clone https://aur.archlinux.org/brave-bin.git && cd ~/git/brave-bin && makepkg -csi
 sudo mkdir /etc/default/grub
-sudo mv ~/linuxconfig-arch/grub /etc/default/grub
+sudo mv ~/linuxconfig-arch/grub /etc/default/grub 
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 #  custom .dotfiles
