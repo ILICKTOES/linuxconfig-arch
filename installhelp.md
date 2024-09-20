@@ -5,9 +5,9 @@ pacstrap /mnt base base-devel mtools linux linux-firmware networkmanager cpupowe
 font=brutalist mono
 Terminal=kitty
 WM=i3
-Web Browser=Brave
+Web Browser=firefox
 RUN=dmenu
 GAMES=steam-runtime/Lutris
 WallpaperCH=nitrogen
 Tasks=htop
-text editor=vim
+text editor=vim/vi
