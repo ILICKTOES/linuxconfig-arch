@@ -4,7 +4,7 @@
 sudo pacman -Sy
 sudo pacman -Syyu 
 
-sudo pacman -S kitty i3 nitrogen dmenu htop thunar 
+sudo pacman -S kitty i3 nitrogen dmenu htop thunar qutebrowser 
 
 
 sudo pacman -S pipewire pipewire-pulse pipewire-media-session pavucontrol
