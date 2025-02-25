@@ -128,5 +128,5 @@ bindsym $mod+r mode "resize"
 
 ##starup
 ##
-exec --no-startup-id nitrogen --restore
+exec --no-startup-id nitrogen --restore # replace with feh
 exec echo "LarryThunder" | sudo -S cpupower frequency-set -g performance
