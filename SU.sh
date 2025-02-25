@@ -14,7 +14,7 @@ sudo pacman -S st i3 feh dmenu ranger sxiv qutebrowser
 sudo pacman -S pipewire pipewire-pulse pipewire-media-session pavucontrol
 
 # Gaming & Wine
-sudo pacman -S steam-runtime lutris gamemode lib32-gamemode wine wine-staging
+sudo pacman -S steam-runtime lutris gamemode lib32-gamemode wine wine-staging mangohud goverlay
 
 # Xorg and Graphics drivers
 sudo pacman -S xclip xorg-server xorg-xinit xf86-input-libinput nvidia-open lib32-nvidia-utils nvidia-settings
@@ -41,8 +41,8 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 #
 #
 
-# WM&Terminal dir
-mkdir ~/.config/i3 && mkdir ~/.config/kitty 
+# WM
+mkdir ~/.config/i3 
 
 # config files
 mv ~/linuxconfig-arch/config ~/.config/i3/config 
