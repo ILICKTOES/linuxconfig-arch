@@ -45,7 +45,7 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 mkdir ~/.config/i3 && mkdir ~/.config/kitty 
 
 # config files
-mv ~/linuxconfig-arch/pictures ~/git && mv ~/linuxconfig-arch/config ~/.config/i3/config 
+mv ~/linuxconfig-arch/config ~/.config/i3/config 
 touch ~/.xinitrc && echo -e '/usr/bin/pipewire & \n/usr/bin/pipewire-pulse & \nexec i3' >> ~/.xinitrc
 
 # Cleanup & Shell
